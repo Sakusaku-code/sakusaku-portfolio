@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMIÈRE | トータルビューティーサロン</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-logo"><em>Lumière</em></div>
+        <ul class="nav-links">
+            <li><a href="#about">サロンについて</a></li>
+            <li><a href="#menu">メニュー</a></li>
+            <li><a href="#voice">お客様の声</a></li>
+        </ul>
+        <button class="nav-cta" onclick="openSlide()">LINE予約</button>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-left">
+            <div class="hero-eyebrow">Total Beauty Salon</div>
+            <h1>内側から輝く、<br>あなたへ。<br><em>上質な美の時間。</em></h1>
+            <p class="hero-desc">フェイシャル・ボディ・ネイルまでトータルで叶える、完全予約制のプライベートサロン。忙しい毎日に、とっておきの贅沢を。</p>
+            <div class="hero-actions">
+                <button class="btn-line" onclick="openSlide()">💬 LINEで予約・相談する</button>
+                <button class="btn-sub"
+                    onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">メニューを見る</button>
+            </div>
+            <div class="hero-proof">
+                <div class="proof-item"><span class="proof-num">2,400+</span><span class="proof-label">累計施術数</span>
+                </div>
+                <div class="proof-item"><span class="proof-num">4.9</span><span class="proof-label">顧客満足度</span></div>
+                <div class="proof-item"><span class="proof-num">7年</span><span class="proof-label">実績</span></div>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="hero-visual">
+                <div class="hero-emoji">💆</div>
+                <div class="hero-tag hero-tag-1"><span class="hero-tag-label">Feature</span><strong>完全個室・完全予約制</strong>
+                </div>
+                <div class="hero-tag hero-tag-2"><span class="hero-tag-label">Popular</span><strong>リピート率91%</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img fade-in">
+            ✨
+            <div class="about-badge"><strong>Since</strong>2018</div>
+        </div>
+        <div>
+            <div class="section-eyebrow fade-in">Our Concept</div>
+            <h2 class="section-title fade-in">あなただけの時間を、<br><em>丁寧に紡ぐ</em>サロン。</h2>
+            <p class="section-body fade-in">
+                ルミエールは、2018年に港区で生まれた完全予約制のプライベートサロンです。セラピスト歴10年以上のスタッフが、お客様一人ひとりのお悩みに寄り添い、心も体も整うトリートメントをご提供します。</p>
+            <div class="feature-list fade-in">
+                <div class="feature-item">
+                    <div class="feature-dot"></div>完全個室・完全予約制で周りを気にせずリラックス
+                </div>
+                <div class="feature-item">
+                    <div class="feature-dot"></div>厳選オーガニックコスメ・精油を使用
+                </div>
+                <div class="feature-item">
+                    <div class="feature-dot"></div>フェイシャル・ボディ・ネイルのトータルケア対応
+                </div>
+                <div class="feature-item">
+                    <div class="feature-dot"></div>LINEで簡単予約・お悩み相談OK
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="menu-header">
+            <div class="section-eyebrow fade-in" style="justify-content:center">Menu</div>
+            <h2 class="section-title fade-in" style="text-align:center">人気の<em>施術メニュー</em></h2>
+            <p style="font-size:0.82rem;color:var(--text-light);margin-top:0.5rem;font-weight:300;text-align:center"
+                class="fade-in">すべてのメニューに無料カウンセリング込み</p>
+        </div>
+        <div class="menu-grid">
+            <div class="menu-card fade-in"><span class="menu-icon">🌿</span><span class="menu-tag">Most Popular</span>
+                <p class="menu-name">フルボディオイルトリートメント</p>
+                <p class="menu-desc">全身の疲れをオーガニックオイルで解放。香りと温もりで深いリラクゼーションへ。</p>
+                <p class="menu-price">¥12,800<small> / 90分</small></p><button class="menu-btn"
+                    onclick="openSlide()">LINEで予約する</button>
+            </div>
+            <div class="menu-card fade-in"><span class="menu-icon">✨</span><span class="menu-tag">Face Care</span>
+                <p class="menu-name">プレミアムフェイシャル</p>
+                <p class="menu-desc">毛穴ケア・美白・保湿を同時に。肌悩みに合わせてカスタマイズする至極のフェイシャル。</p>
+                <p class="menu-price">¥15,800<small> / 90分</small></p><button class="menu-btn"
+                    onclick="openSlide()">LINEで予約する</button>
+            </div>
+            <div class="menu-card fade-in"><span class="menu-icon">💅</span><span class="menu-tag">Nail</span>
+                <p class="menu-name">ジェルネイル（手足セット）</p>
+                <p class="menu-desc">デザイン・カラー自由自在。仕上がりの美しさと持ちの良さにこだわったネイルケア。</p>
+                <p class="menu-price">¥8,800<small> / 120分</small></p><button class="menu-btn"
+                    onclick="openSlide()">LINEで予約する</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="voice" id="voice">
+        <div class="voice-header">
+            <div class="section-eyebrow fade-in" style="justify-content:center">Voice</div>
+            <h2 class="section-title fade-in" style="text-align:center">お客様からの<em>うれしいお声</em></h2>
+        </div>
+        <div class="voice-grid">
+            <div class="voice-card fade-in">
+                <div class="voice-stars">★★★★★</div>
+                <p class="voice-text">「施術中の気遣いが素晴らしく、気づいたら眠ってしまっていました。それほどリラックスできる空間です。毎月通っています。」</p>
+                <div class="voice-author">
+                    <div class="voice-avatar">👩</div>
+                    <div>
+                        <p class="voice-name">M.O さん・30代</p>
+                        <p class="voice-occasion">ボディトリートメント</p>
+                    </div>
+                </div>
+            </div>
+            <div class="voice-card fade-in">
+                <div class="voice-stars">★★★★★</div>
+                <p class="voice-text">「LINEで予約できるのがとても便利。スタッフの方が肌悩みを丁寧に聞いてくれて、フェイシャル後は肌がツルツルになりました。」</p>
+                <div class="voice-author">
+                    <div class="voice-avatar">👩</div>
+                    <div>
+                        <p class="voice-name">A.K さん・20代</p>
+                        <p class="voice-occasion">フェイシャルトリートメント</p>
+                    </div>
+                </div>
+            </div>
+            <div class="voice-card fade-in">
+                <div class="voice-stars">★★★★★</div>
+                <p class="voice-text">「結婚式前にトータルでお願いしました。顔・体・ネイルすべて整えてもらえて、式当日は自信を持って臨めました。感謝しています。」</p>
+                <div class="voice-author">
+                    <div class="voice-avatar">👩</div>
+                    <div>
+                        <p class="voice-name">Y.T さん・30代</p>
+                        <p class="voice-occasion">ブライダルコース</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <p class="cta-eyebrow fade-in">LINE Reservation</p>
+        <h2 class="cta-title fade-in">まずは、<em>LINEで気軽に</em><br>ご相談ください。</h2>
+        <p class="cta-desc fade-in">メニューのこと、お悩みのこと、なんでもOK。<br>24時間いつでもメッセージを受け付けています。</p>
+        <button class="cta-line-btn fade-in" onclick="openSlide()">💬 LINEで予約・相談する</button>
+        <div class="cta-notes fade-in">
+            <span class="cta-note-item">📱 24時間受付</span>
+            <span class="cta-note-item">🔒 完全個室</span>
+            <span class="cta-note-item">✨ 初回カウンセリング無料</span>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo"><em>Lumière</em></div>
+        <div class="footer-info">東京都港区<br>営業時間：10:00〜21:00（不定休）</div>
+        <p class="footer-copy">© 2025 Lumière</p>
+    </footer>
+
+    <div class="slide-up" id="slideUp">
+        <div class="slide-content">
+            <strong>💬 LINEで簡単予約・ご相談</strong>
+            <p>24時間受付中。メニューのご相談もお気軽にどうぞ。初回カウンセリング無料です。</p>
+        </div>
+        <div class="slide-btns">
+            <button class="btn-line" style="padding:0.65rem 1.5rem;font-size:0.78rem"
+                onclick="closeSlide()">LINEで相談する</button>
+            <button class="slide-close" onclick="closeSlide()">✕</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

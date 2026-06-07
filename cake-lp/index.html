@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pâtisserie Sakura | オーダーケーキ専門店</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-logo">Pâtisserie <em>Sakura</em></div>
+        <ul class="nav-links">
+            <li><a href="#about">こだわり</a></li>
+            <li><a href="#flow">ご注文の流れ</a></li>
+            <li><a href="#gallery">作品例</a></li>
+            <li><a href="#voice">お客様の声</a></li>
+        </ul>
+        <button class="nav-cta" onclick="openModal()">オーダーを相談する</button>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-left">
+            <div class="hero-eyebrow">
+                <span class="eyebrow-line"></span>
+                <span class="eyebrow-text">Order Cake Specialist</span>
+            </div>
+            <h1>あなたの想いを、<br>ケーキに込めて。<br><em>特別な一日のために。</em></h1>
+            <p class="hero-desc">
+                誕生日、結婚記念日、プロポーズ——<br>
+                大切な場面に寄り添うオーダーケーキを、<br>
+                パティシエが一つひとつ丁寧に制作します。
+            </p>
+            <div class="hero-actions">
+                <button class="btn-main" onclick="openModal()">無料でオーダー相談する</button>
+                <button class="btn-sub"
+                    onclick="document.getElementById('gallery').scrollIntoView({behavior:'smooth'})">作品例を見る</button>
+            </div>
+            <div class="hero-proof">
+                <div class="proof-item"><span class="proof-num">800+</span><span class="proof-label">年間オーダー数</span>
+                </div>
+                <div class="proof-item"><span class="proof-num">4.9</span><span class="proof-label">顧客満足度</span></div>
+                <div class="proof-item"><span class="proof-num">10年</span><span class="proof-label">制作実績</span></div>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="hero-img-main">
+                <div class="deco-circle"></div>
+                <div class="deco-circle"></div>
+                <div class="cake-display">🎂</div>
+                <div class="hero-tag hero-tag-1"><strong>最短3日〜</strong>ご注文から制作開始</div>
+                <div class="hero-tag hero-tag-2"><strong>アレルギー対応◎</strong>グルテンフリー等ご相談可</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-visual fade-in">
+            <div class="about-img-box">👩‍🍳<span class="about-img-label">SINCE 2015</span></div>
+        </div>
+        <div class="about-content">
+            <div class="section-eyebrow fade-in">
+                <div class="eyebrow-dot"></div><span class="eyebrow-label">Our Story</span>
+            </div>
+            <h2 class="section-title fade-in">素材の声を聴き、<br><em>想いを形に</em>する。</h2>
+            <p class="section-body fade-in">
+                パティスリーさくらは、2015年に代官山で生まれたオーダーケーキ専門店です。フランスで修業を積んだパティシエが、国産素材にこだわり、お客様一人ひとりの想いに寄り添ったケーキをお作りしています。</p>
+            <div class="feature-list fade-in">
+                <div class="feature-item"><span class="feature-check">✦</span>北海道産生クリーム・国産小麦粉のみ使用</div>
+                <div class="feature-item"><span class="feature-check">✦</span>防腐剤・着色料ゼロ。体に優しい素材で丁寧に</div>
+                <div class="feature-item"><span class="feature-check">✦</span>デザイン・サイズ・メッセージを完全カスタマイズ</div>
+                <div class="feature-item"><span class="feature-check">✦</span>グルテンフリー・卵アレルギー等にも対応</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="flow" id="flow">
+        <div class="flow-header">
+            <div class="section-eyebrow fade-in" style="justify-content:center">
+                <div class="eyebrow-dot"></div><span class="eyebrow-label">How to Order</span>
+            </div>
+            <h2 class="section-title fade-in" style="text-align:center">ご注文の流れ</h2>
+            <p class="section-body fade-in" style="max-width:500px;margin:0 auto;text-align:center">
+                はじめての方も安心。簡単4ステップでオーダーできます。</p>
+        </div>
+        <div class="flow-steps">
+            <div class="flow-step fade-in">
+                <div class="step-num">1</div><span class="step-icon">📝</span>
+                <p class="step-title">フォームで相談</p>
+                <p class="step-desc">ご希望の日程・デザイン・ご予算をフォームからお知らせください。</p>
+            </div>
+            <div class="flow-step fade-in">
+                <div class="step-num">2</div><span class="step-icon">💬</span>
+                <p class="step-title">打ち合わせ</p>
+                <p class="step-desc">2営業日以内にご連絡。デザインや詳細をヒアリングします。</p>
+            </div>
+            <div class="flow-step fade-in">
+                <div class="step-num">3</div><span class="step-icon">🎨</span>
+                <p class="step-title">制作開始</p>
+                <p class="step-desc">ご入金確認後、パティシエが丁寧に制作。途中経過もご報告します。</p>
+            </div>
+            <div class="flow-step fade-in">
+                <div class="step-num">4</div><span class="step-icon">🎁</span>
+                <p class="step-title">お届け・受け取り</p>
+                <p class="step-desc">店頭受け取りまたは配送でお届け。当日まで冷蔵保管します。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="gallery-header">
+            <div class="section-eyebrow fade-in" style="justify-content:center">
+                <div class="eyebrow-dot"></div><span class="eyebrow-label">Works</span>
+            </div>
+            <h2 class="section-title fade-in" style="text-align:center">制作実績・作品例</h2>
+            <p class="section-body fade-in" style="max-width:480px;margin:0 auto;text-align:center">
+                これまでにお作りしたオーダーケーキの一部をご紹介します。</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-card fade-in">
+                <div class="gallery-img">🍓</div>
+                <div class="gallery-body"><span class="gallery-tag">Birthday</span>
+                    <p class="gallery-name">苺デコレーションケーキ</p>
+                    <p class="gallery-price">¥6,800〜 <small>/ 5号</small></p>
+                </div>
+            </div>
+            <div class="gallery-card fade-in">
+                <div class="gallery-img">💐</div>
+                <div class="gallery-body"><span class="gallery-tag">Wedding</span>
+                    <p class="gallery-name">フラワーウェディングケーキ</p>
+                    <p class="gallery-price">¥28,000〜 <small>/ 2段</small></p>
+                </div>
+            </div>
+            <div class="gallery-card fade-in">
+                <div class="gallery-img">🍫</div>
+                <div class="gallery-body"><span class="gallery-tag">Anniversary</span>
+                    <p class="gallery-name">チョコレートガナッシュ</p>
+                    <p class="gallery-price">¥7,500〜 <small>/ 5号</small></p>
+                </div>
+            </div>
+            <div class="gallery-card fade-in">
+                <div class="gallery-img">🌸</div>
+                <div class="gallery-body"><span class="gallery-tag">Spring Limited</span>
+                    <p class="gallery-name">さくらムースケーキ</p>
+                    <p class="gallery-price">¥8,200〜 <small>/ 5号</small></p>
+                </div>
+            </div>
+            <div class="gallery-card fade-in">
+                <div class="gallery-img">🎭</div>
+                <div class="gallery-body"><span class="gallery-tag">Character</span>
+                    <p class="gallery-name">キャラクターオーダー</p>
+                    <p class="gallery-price">¥12,000〜 <small>/ 6号</small></p>
+                </div>
+            </div>
+            <div class="gallery-card fade-in">
+                <div class="gallery-img">✉️</div>
+                <div class="gallery-body"><span class="gallery-tag">Gift</span>
+                    <p class="gallery-name">メッセージケーキ</p>
+                    <p class="gallery-price">¥5,500〜 <small>/ 4号</small></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="voice" id="voice">
+        <div class="voice-header">
+            <div class="section-eyebrow fade-in" style="justify-content:center">
+                <div class="eyebrow-dot"></div><span class="eyebrow-label">Customer Voice</span>
+            </div>
+            <h2 class="section-title fade-in" style="text-align:center">お客様からの<em>喜びの声</em></h2>
+        </div>
+        <div class="voice-grid">
+            <div class="voice-card fade-in">
+                <div class="voice-stars">★★★★★</div>
+                <p class="voice-text">「娘の誕生日にオーダーしました。写真を見せたら想像以上の仕上がりで、娘も涙を流すほど喜んでくれました。また絶対お願いします。」</p>
+                <div class="voice-author">
+                    <div class="voice-avatar">👩</div>
+                    <div>
+                        <p class="voice-name">M.T さん</p>
+                        <p class="voice-occasion">お誕生日に</p>
+                    </div>
+                </div>
+            </div>
+            <div class="voice-card fade-in">
+                <div class="voice-stars">★★★★★</div>
+                <p class="voice-text">「プロポーズ用にサプライズケーキをお願いしました。丁寧なヒアリングで、彼女が大好きな花をケーキで再現してもらえて最高でした。」</p>
+                <div class="voice-author">
+                    <div class="voice-avatar">👨</div>
+                    <div>
+                        <p class="voice-name">K.S さん</p>
+                        <p class="voice-occasion">プロポーズに</p>
+                    </div>
+                </div>
+            </div>
+            <div class="voice-card fade-in">
+                <div class="voice-stars">★★★★★</div>
+                <p class="voice-text">「アレルギーがある子供のために相談したら、卵・乳製品不使用で美味しいケーキを作ってもらえました。子供が本当に嬉しそうで感謝しかないです。」</p>
+                <div class="voice-author">
+                    <div class="voice-avatar">👩</div>
+                    <div>
+                        <p class="voice-name">A.N さん</p>
+                        <p class="voice-occasion">アレルギー対応ケーキに</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <p class="cta-eyebrow fade-in">Order Consultation Free</p>
+        <h2 class="cta-title fade-in">大切な日の主役を、<br><em>あなただけのケーキ</em>に。</h2>
+        <p class="cta-desc fade-in">まずはお気軽にご相談ください。予算・デザイン・日程など、<br>どんなご要望もパティシエが丁寧にお答えします。</p>
+        <button class="cta-btn fade-in" onclick="openModal()">無料でオーダー相談する</button>
+        <div class="cta-notes fade-in">
+            <span class="cta-note-item">📅 ご希望日の3日前まで受付</span>
+            <span class="cta-note-item">📦 全国配送対応</span>
+            <span class="cta-note-item">🌿 アレルギー対応可</span>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">Pâtisserie <em>Sakura</em></div>
+        <div class="footer-info">東京都渋谷区代官山町 1-23<br>営業時間：11:00〜19:00（火曜定休）</div>
+        <p class="footer-copy">© 2025 Pâtisserie Sakura</p>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <p class="modal-eyebrow">Order Consultation</p>
+            <h3>オーダー相談フォーム</h3>
+            <p class="modal-sub">ご希望の内容をお知らせください。<br>2営業日以内にパティシエよりご連絡いたします。相談無料です。</p>
+            <div class="modal-form">
+                <input type="text" placeholder="お名前">
+                <input type="email" placeholder="メールアドレス">
+                <input type="text" placeholder="ご希望日（例：2025年8月15日）">
+                <select>
+                    <option value="">ご用途を選択</option>
+                    <option>誕生日</option>
+                    <option>結婚記念日</option>
+                    <option>プロポーズ</option>
+                    <option>ウェディング</option>
+                    <option>ギフト・その他</option>
+                </select>
+                <input type="text" placeholder="ご予算の目安（例：1万円前後）">
+                <textarea placeholder="デザインのご希望・アレルギー・その他ご要望"></textarea>
+                <button class="modal-submit" onclick="closeModal()">相談内容を送信する</button>
+            </div>
+            <p class="modal-note">※ 送信後2営業日以内にご連絡いたします</p>
+        </div>
+    </div>
+
+    <!-- SLIDE UP -->
+    <div class="slide-up" id="slideUp">
+        <div class="slide-content">
+            <strong>🎂 オーダーケーキのご相談、受付中です</strong>
+            <p>誕生日・記念日・ウェディングに。まずはお気軽にご相談ください。</p>
+        </div>
+        <div class="slide-btns">
+            <button class="btn-main" style="padding:0.65rem 1.5rem;font-size:0.78rem"
+                onclick="openModal()">無料相談する</button>
+            <button class="slide-close" onclick="closeSlide()">✕</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

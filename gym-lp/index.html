@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMA GYM | パーソナルトレーニング専門</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-logo">FORMA<span>GYM</span></div>
+        <ul class="nav-links">
+            <li><a href="#results">実績</a></li>
+            <li><a href="#features">特徴</a></li>
+            <li><a href="#plan">料金</a></li>
+            <li><a href="#voice">お客様の声</a></li>
+        </ul>
+        <button class="nav-cta" onclick="openModal()">無料体験を予約</button>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-left">
+            <span class="hero-badge">Personal Training Gym</span>
+            <h1>限界を<br>超えろ。<br><span>結果が、全て。</span></h1>
+            <p class="hero-desc">完全個室・完全マンツーマン。あなたの目標に特化したトレーニングで、最短ルートで理想の体へ。</p>
+            <div class="hero-actions">
+                <button class="btn-main" onclick="openModal()">無料体験を予約する</button>
+                <button class="btn-sub"
+                    onclick="document.getElementById('plan').scrollIntoView({behavior:'smooth'})">料金を確認する</button>
+            </div>
+            <div class="hero-proof">
+                <div class="proof-item"><span class="proof-num">1,200+</span><span class="proof-label">会員数</span></div>
+                <div class="proof-item"><span class="proof-num">98%</span><span class="proof-label">目標達成率</span></div>
+                <div class="proof-item"><span class="proof-num">5年</span><span class="proof-label">実績</span></div>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="hero-visual">💪</div>
+            <div class="hero-tag hero-tag-1"><strong>完全個室</strong><span>他の目が気にならない</span></div>
+            <div class="hero-tag hero-tag-2"><strong>-12kg達成</strong><span>3ヶ月の実績例</span></div>
+        </div>
+    </section>
+
+    <section class="results" id="results">
+        <div class="results-header">
+            <span class="section-label fade-in">Results</span>
+            <h2 class="section-title fade-in">数字が証明する、<em>FORMA</em>の実力</h2>
+        </div>
+        <div class="results-grid">
+            <div class="result-card fade-in"><span class="result-icon">🏆</span><span class="result-num">98%</span><span
+                    class="result-label">3ヶ月以内の目標達成率。明確な数値目標を設定し、科学的アプローチで確実に結果を出します。</span></div>
+            <div class="result-card fade-in"><span class="result-icon">⚡</span><span
+                    class="result-num">-8.5kg</span><span
+                    class="result-label">3ヶ月平均ダイエット実績。食事管理と運動を組み合わせた総合的なプログラムが結果を生みます。</span></div>
+            <div class="result-card fade-in"><span class="result-icon">🔄</span><span
+                    class="result-label">継続率92%。入会後3ヶ月以上継続するお客様の割合。結果が出るから続けられる好循環を生みます。</span><span
+                    class="result-num">92%</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="features-grid">
+            <div class="features-visual fade-in">
+                <div class="features-img">🏋️<span class="features-img-label">CERTIFIED TRAINER</span></div>
+            </div>
+            <div>
+                <span class="section-label fade-in">Why FORMA</span>
+                <h2 class="section-title fade-in" style="margin-bottom:2rem">他とは違う、<em>4つの理由</em></h2>
+                <div class="feature-list fade-in">
+                    <div class="feature-item"><span class="feature-num">01</span>
+                        <div class="feature-content">
+                            <h3>完全個室・マンツーマン</h3>
+                            <p>他の会員を気にせず集中できる完全個室でのトレーニング。トレーナーが専属でサポートします。</p>
+                        </div>
+                    </div>
+                    <div class="feature-item"><span class="feature-num">02</span>
+                        <div class="feature-content">
+                            <h3>科学的プログラム設計</h3>
+                            <p>体組成測定・フォーム分析に基づいた個別プログラム。無駄なく最短で結果を出します。</p>
+                        </div>
+                    </div>
+                    <div class="feature-item"><span class="feature-num">03</span>
+                        <div class="feature-content">
+                            <h3>食事管理もセットで</h3>
+                            <p>トレーニングだけでなく食事指導も込み。LINEでいつでも相談できる環境を整えています。</p>
+                        </div>
+                    </div>
+                    <div class="feature-item"><span class="feature-num">04</span>
+                        <div class="feature-content">
+                            <h3>全国資格保有トレーナー</h3>
+                            <p>NSCA・NESTAなど全国資格を保有したプロトレーナーのみが在籍。安心して任せられます。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="plan" id="plan">
+        <div class="plan-header">
+            <span class="section-label fade-in">Pricing</span>
+            <h2 class="section-title fade-in">シンプルな<em>料金プラン</em></h2>
+            <p style="font-size:0.82rem;color:var(--gray);margin-top:0.8rem;font-weight:300" class="fade-in">
+                すべてのプランに無料体験1回・食事指導・LINEサポート込み</p>
+        </div>
+        <div class="plan-grid">
+            <div class="plan-card fade-in">
+                <p class="plan-name">LIGHT</p>
+                <p class="plan-price">¥39,800<small>/月</small></p>
+                <p class="plan-desc">週2回・1回60分。忙しい方向けのスタンダードプラン。</p>
+                <div class="plan-features">
+                    <p class="plan-feature">月8回トレーニング</p>
+                    <p class="plan-feature">食事管理サポート</p>
+                    <p class="plan-feature">LINEサポート</p>
+                </div><button class="plan-btn" onclick="openModal()">無料体験を予約</button>
+            </div>
+            <div class="plan-card popular fade-in"><span class="plan-badge">人気No.1</span>
+                <p class="plan-name">STANDARD</p>
+                <p class="plan-price">¥59,800<small>/月</small></p>
+                <p class="plan-desc">週3回・1回60分。最も結果が出やすいおすすめプラン。</p>
+                <div class="plan-features">
+                    <p class="plan-feature">月12回トレーニング</p>
+                    <p class="plan-feature">食事管理サポート</p>
+                    <p class="plan-feature">LINEサポート24h</p>
+                    <p class="plan-feature">体組成測定月1回</p>
+                </div><button class="plan-btn" onclick="openModal()">無料体験を予約</button>
+            </div>
+            <div class="plan-card fade-in">
+                <p class="plan-name">PREMIUM</p>
+                <p class="plan-price">¥89,800<small>/月</small></p>
+                <p class="plan-desc">週5回・1回90分。最速で結果を出したい方向け。</p>
+                <div class="plan-features">
+                    <p class="plan-feature">月20回トレーニング</p>
+                    <p class="plan-feature">専属シェフ監修食事指導</p>
+                    <p class="plan-feature">LINEサポート24h</p>
+                    <p class="plan-feature">体組成測定週1回</p>
+                </div><button class="plan-btn" onclick="openModal()">無料体験を予約</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="voice" id="voice">
+        <div class="voice-header">
+            <span class="section-label fade-in">Voice</span>
+            <h2 class="section-title fade-in">会員様からの<em>リアルな声</em></h2>
+        </div>
+        <div class="voice-grid">
+            <div class="voice-card fade-in">
+                <div class="voice-stars">★★★★★</div>
+                <p class="voice-text">「3ヶ月で12kg落ちました。食事も運動も無理なく続けられて、気づいたら目標体重を超えていた感じです。」</p>
+                <div class="voice-author">
+                    <div class="voice-avatar">👩</div>
+                    <div>
+                        <p class="voice-name">Y.M さん・30代女性</p>
+                        <p class="voice-detail">3ヶ月 -12kg達成</p>
+                    </div>
+                </div>
+            </div>
+            <div class="voice-card fade-in">
+                <div class="voice-stars">★★★★★</div>
+                <p class="voice-text">「他のジムで結果が出なくて転会しました。フォーマは科学的なアプローチで、2ヶ月で別人になれました。」</p>
+                <div class="voice-author">
+                    <div class="voice-avatar">👨</div>
+                    <div>
+                        <p class="voice-name">T.K さん・40代男性</p>
+                        <p class="voice-detail">2ヶ月で体脂肪率-8%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="voice-card fade-in">
+                <div class="voice-stars">★★★★★</div>
+                <p class="voice-text">「産後ダイエットで入会。完全個室なので人目を気にせずトレーニングできました。半年でウエスト-15cm！」</p>
+                <div class="voice-author">
+                    <div class="voice-avatar">👩</div>
+                    <div>
+                        <p class="voice-name">A.S さん・30代女性</p>
+                        <p class="voice-detail">6ヶ月 ウエスト-15cm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <p class="cta-label fade-in">Limited Offer</p>
+        <h2 class="cta-title fade-in">今すぐ動け。<br>無料体験、受付中。</h2>
+        <p class="cta-desc fade-in">まず体験してから決めてください。入会を強要する一切ありません。<br>60分のトレーニング体験＋カウンセリングが完全無料です。</p>
+        <button class="cta-btn fade-in" onclick="openModal()">無料体験を予約する</button>
+        <div class="cta-notes fade-in">
+            <span class="cta-note-item">📅 当日予約OK</span>
+            <span class="cta-note-item">💰 入会費0円</span>
+            <span class="cta-note-item">🚪 完全個室</span>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">FORMA<span>GYM</span></div>
+        <div class="footer-info">東京都新宿区<br>営業時間：6:00〜23:00（年中無休）</div>
+        <p class="footer-copy">© 2025 FORMA GYM</p>
+    </footer>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <p class="modal-label">Free Trial</p>
+            <h3>無料体験予約</h3>
+            <p class="modal-sub">60分のトレーニング体験＋カウンセリングが完全無料。<br>入会を強要することは一切ありません。お気軽にどうぞ。</p>
+            <div class="modal-form">
+                <input type="text" placeholder="お名前">
+                <input type="tel" placeholder="電話番号">
+                <input type="email" placeholder="メールアドレス">
+                <select>
+                    <option value="">ご希望日程</option>
+                    <option>平日午前（6:00〜12:00）</option>
+                    <option>平日午後（12:00〜18:00）</option>
+                    <option>平日夜間（18:00〜23:00）</option>
+                    <option>土日祝</option>
+                </select>
+                <select>
+                    <option value="">目標を選択</option>
+                    <option>ダイエット・体重減少</option>
+                    <option>筋肉増量・ボディメイク</option>
+                    <option>姿勢改善・体力向上</option>
+                    <option>産後ダイエット</option>
+                    <option>その他</option>
+                </select>
+                <textarea placeholder="現在の状況・ご要望など（任意）"></textarea>
+                <button class="modal-submit" onclick="closeModal()">予約を確定する</button>
+            </div>
+            <p class="modal-note">※ 送信後24時間以内にご連絡いたします</p>
+        </div>
+    </div>
+
+    <div class="slide-up" id="slideUp">
+        <div class="slide-content">
+            <strong>💪 無料体験、今なら当日予約OK</strong>
+            <p>60分トレーニング体験＋カウンセリングが完全無料。入会強要一切なし。</p>
+        </div>
+        <div class="slide-btns">
+            <button class="btn-main" style="padding:0.65rem 1.5rem;font-size:0.78rem"
+                onclick="openModal()">今すぐ予約</button>
+            <button class="slide-close" onclick="closeSlide()">✕</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKILL UP ACADEMY | オンラインスクール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-logo">SKILL UP <span>ACADEMY</span></div>
+        <ul class="nav-links">
+            <li><a href="#features">特徴</a></li>
+            <li><a href="#curriculum">カリキュラム</a></li>
+            <li><a href="#voice">受講生の声</a></li>
+        </ul>
+        <button class="nav-cta" onclick="openModal()">無料説明会に申し込む</button>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-left">
+            <div class="hero-badge">
+                <div class="hero-badge-dot"></div>オンライン完結・未経験OK
+            </div>
+            <h1>副業で月20万。<br>Webスキルで<br><em>人生を変えよう。</em></h1>
+            <p class="hero-desc">プログラミング・デザイン・マーケティング——3つのスキルを同時に学べる実践型スクール。卒業後の案件獲得まで、現役プロがサポートします。</p>
+            <div class="hero-checklist">
+                <div class="hero-check">
+                    <div class="check-icon">✓</div>未経験から最短3ヶ月で副業スタート
+                </div>
+                <div class="hero-check">
+                    <div class="check-icon">✓</div>現役フリーランスによるマンツーマン指導
+                </div>
+                <div class="hero-check">
+                    <div class="check-icon">✓</div>卒業後も案件紹介・コミュニティで継続サポート
+                </div>
+            </div>
+            <div class="hero-actions">
+                <button class="btn-main" onclick="openModal()">無料説明会に申し込む</button>
+                <button class="btn-sub"
+                    onclick="document.getElementById('curriculum').scrollIntoView({behavior:'smooth'})">カリキュラムを見る</button>
+            </div>
+            <div class="hero-proof">
+                <div class="proof-item"><span class="proof-num">1,800+</span><span class="proof-label">卒業生数</span></div>
+                <div class="proof-item"><span class="proof-num">94%</span><span class="proof-label">副業達成率</span></div>
+                <div class="proof-item"><span class="proof-num">3ヶ月</span><span class="proof-label">最短達成期間</span></div>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="hero-card">
+                <div class="card-header">
+                    <div class="card-icon">🎓</div>
+                    <div>
+                        <p class="card-title">今週の授業</p>
+                        <p class="card-subtitle">Web制作コース・Week 8</p>
+                    </div>
+                </div>
+                <div class="card-lessons">
+                    <div class="card-lesson">
+                        <div class="lesson-icon">💻</div>
+                        <div>
+                            <p class="lesson-text">ReactでLP制作</p>
+                            <p class="lesson-label">動画 45分 ｜ 演習あり</p>
+                        </div>
+                    </div>
+                    <div class="card-lesson">
+                        <div class="lesson-icon">🎨</div>
+                        <div>
+                            <p class="lesson-text">Figmaデザイン基礎</p>
+                            <p class="lesson-label">動画 30分 ｜ 課題提出</p>
+                        </div>
+                    </div>
+                    <div class="card-lesson">
+                        <div class="lesson-icon">📊</div>
+                        <div>
+                            <p class="lesson-text">SEO・アクセス解析</p>
+                            <p class="lesson-label">動画 40分 ｜ クイズ</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="card-btn" onclick="openModal()">無料で説明会に参加</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="trust">
+        <div class="trust-inner">
+            <div class="trust-item fade-in"><span class="trust-num">1,800+</span><span class="trust-label">累計卒業生</span>
+            </div>
+            <div class="trust-item fade-in"><span class="trust-num">94%</span><span class="trust-label">副業収入達成率</span>
+            </div>
+            <div class="trust-item fade-in"><span class="trust-num">¥18万</span><span class="trust-label">卒業生平均月収</span>
+            </div>
+            <div class="trust-item fade-in"><span class="trust-num">4.9</span><span class="trust-label">受講満足度</span>
+            </div>
+            <div class="trust-item fade-in"><span class="trust-num">3ヶ月</span><span class="trust-label">最短副業達成期間</span>
+            </div>
+        </div>
+    </div>
+
+    <section class="features" id="features">
+        <div class="features-header">
+            <div class="section-tag fade-in">Why Us</div>
+            <h2 class="section-title fade-in">他スクールとは<em>ここが違う</em></h2>
+            <p class="section-desc fade-in">動画見放題のだけのスクールとは違います。実践×サポートで確実に結果を出します。</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card fade-in">
+                <div class="feature-icon">👨‍💻</div>
+                <p class="feature-title">現役プロが直接指導</p>
+                <p class="feature-desc">実際に副業・フリーランスで活躍する現役プロが講師。机上の空論ではなく、今使える実践知識を教えます。</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon">💼</div>
+                <p class="feature-title">案件紹介まで一貫サポート</p>
+                <p class="feature-desc">学習中から実案件を紹介。卒業後も専任メンターが副業定着まで伴走します。学びっぱなしにはなりません。</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon">📱</div>
+                <p class="feature-title">完全オンライン・自分ペース</p>
+                <p class="feature-desc">動画・課題・メンタリングすべてオンライン完結。働きながら、育児しながら、自分のペースで学べます。</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon">🤝</div>
+                <p class="feature-title">卒業後も続くコミュニティ</p>
+                <p class="feature-desc">1,800人以上の卒業生コミュニティに参加できます。案件の相互紹介・情報交換・モチベーション維持に。</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon">🎯</div>
+                <p class="feature-title">3スキル同時習得</p>
+                <p class="feature-desc">コーディング・デザイン・マーケティングを1つのコースで習得。掛け合わせで単価が一気に上がります。</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon">💰</div>
+                <p class="feature-title">分割払い・給付金対応</p>
+                <p class="feature-desc">月々の負担を抑えた分割払いに対応。経済産業省認定コースは給付金（最大70%還元）が使えます。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="curriculum" id="curriculum">
+        <div class="curriculum-header">
+            <div class="section-tag fade-in">Curriculum</div>
+            <h2 class="section-title fade-in">3ヶ月で<em>副業デビュー</em>まで</h2>
+            <p class="section-desc fade-in" style="max-width:500px;margin:0 auto">未経験から副業収入を得るまでの最短ルートを設計しました。</p>
+        </div>
+        <div class="curriculum-grid">
+            <div class="curriculum-item fade-in"><span class="curriculum-num">01</span>
+                <div><span class="curriculum-week">Week 1-2</span>
+                    <p class="curriculum-title">Web制作の基礎</p>
+                    <p class="curriculum-desc">HTML・CSS・JavaScriptの基礎。手を動かして覚える実践型カリキュラム。</p>
+                </div>
+            </div>
+            <div class="curriculum-item fade-in"><span class="curriculum-num">02</span>
+                <div><span class="curriculum-week">Week 3-4</span>
+                    <p class="curriculum-title">デザイン・Figma</p>
+                    <p class="curriculum-desc">Figmaの使い方からLP設計まで。デザイン思考を身につけます。</p>
+                </div>
+            </div>
+            <div class="curriculum-item fade-in"><span class="curriculum-num">03</span>
+                <div><span class="curriculum-week">Week 5-6</span>
+                    <p class="curriculum-title">実案件レベルのLP制作</p>
+                    <p class="curriculum-desc">架空クライアント向けにLP制作。ポートフォリオとして使えるクオリティを目指します。</p>
+                </div>
+            </div>
+            <div class="curriculum-item fade-in"><span class="curriculum-num">04</span>
+                <div><span class="curriculum-week">Week 7-8</span>
+                    <p class="curriculum-title">マーケティング・SEO</p>
+                    <p class="curriculum-desc">成果につながるLPの設計・コピーライティング・SEO対策まで。</p>
+                </div>
+            </div>
+            <div class="curriculum-item fade-in"><span class="curriculum-num">05</span>
+                <div><span class="curriculum-week">Week 9-10</span>
+                    <p class="curriculum-title">案件獲得・提案</p>
+                    <p class="curriculum-desc">クラウドワークス・ランサーズの使い方・提案文・価格設定まで実践的に学びます。</p>
+                </div>
+            </div>
+            <div class="curriculum-item fade-in"><span class="curriculum-num">06</span>
+                <div><span class="curriculum-week">Week 11-12</span>
+                    <p class="curriculum-title">実案件対応・副業スタート</p>
+                    <p class="curriculum-desc">スクール経由の案件を実際に受注。メンターのサポートのもと副業デビューします。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="voice" id="voice">
+        <div class="voice-header">
+            <div class="section-tag fade-in">Voice</div>
+            <h2 class="section-title fade-in">卒業生の<em>リアルな声</em></h2>
+        </div>
+        <div class="voice-grid">
+            <div class="voice-card fade-in">
+                <div class="voice-top">
+                    <div class="voice-avatar">👩</div>
+                    <div>
+                        <p class="voice-name">M.T さん・28歳・会社員</p>
+                        <p class="voice-detail">Web制作コース卒業</p>
+                    </div>
+                </div>
+                <div class="voice-stars">★★★★★</div>
+                <p class="voice-text">「受講前は全くの未経験でした。3ヶ月後には副業で月8万を達成。今は会社員をしながら月15万を安定して稼げています。」</p>
+                <div class="voice-result">月収 +15万円 達成 🎉</div>
+            </div>
+            <div class="voice-card fade-in">
+                <div class="voice-top">
+                    <div class="voice-avatar">👨</div>
+                    <div>
+                        <p class="voice-name">K.N さん・35歳・営業職</p>
+                        <p class="voice-detail">Web制作コース卒業</p>
+                    </div>
+                </div>
+                <div class="voice-stars">★★★★★</div>
+                <p class="voice-text">「仕事が忙しくて学習が遅れがちでしたが、メンターが親身にサポートしてくれました。4ヶ月で独立できました。」</p>
+                <div class="voice-result">4ヶ月でフリーランス独立 🚀</div>
+            </div>
+            <div class="voice-card fade-in">
+                <div class="voice-top">
+                    <div class="voice-avatar">👩</div>
+                    <div>
+                        <p class="voice-name">Y.S さん・32歳・育休中</p>
+                        <p class="voice-detail">Web制作コース卒業</p>
+                    </div>
+                </div>
+                <div class="voice-stars">★★★★★</div>
+                <p class="voice-text">「育休中に受講。子供が寝た後の2時間だけで学習を続けました。復職前に月10万の副収入を作れて本当によかったです。」</p>
+                <div class="voice-result">育休中に月収 +10万円 達成 ✨</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-badge fade-in">🎁 今なら受講料10%OFF</div>
+        <h2 class="cta-title fade-in">まず、<em>無料説明会</em>から<br>始めてみませんか？</h2>
+        <p class="cta-desc fade-in">カリキュラムの詳細・費用・学習方法など、すべてお答えします。<br>参加は無料。強引な勧誘は一切行いません。</p>
+        <button class="cta-btn fade-in" onclick="openModal()">無料説明会に申し込む</button>
+        <p class="cta-sub fade-in">毎週土曜10:00〜 / 平日20:00〜 開催 ｜ Zoom参加</p>
+        <div class="cta-notes fade-in">
+            <span class="cta-note-item">✅ 参加無料</span>
+            <span class="cta-note-item">✅ 強引な勧誘なし</span>
+            <span class="cta-note-item">✅ 当日キャンセルOK</span>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">SKILL UP <span>ACADEMY</span></div>
+        <div class="footer-info">東京都渋谷区<br>受付時間：10:00〜19:00（土日祝も対応）</div>
+        <p class="footer-copy">© 2025 Skill Up Academy</p>
+    </footer>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <div class="modal-badge">🎓 無料説明会</div>
+            <h3>無料説明会に申し込む</h3>
+            <p class="modal-sub">カリキュラム・費用・学習方法など、なんでもご質問いただけます。強引な勧誘は一切行いません。</p>
+            <div class="modal-form">
+                <div><label class="form-label">お名前</label><input type="text" placeholder="山田 花子"></div>
+                <div><label class="form-label">メールアドレス</label><input type="email" placeholder="example@email.com"></div>
+                <div><label class="form-label">希望日程</label>
+                    <select>
+                        <option value="">説明会の日程を選ぶ</option>
+                        <option>土曜 10:00〜（Zoom）</option>
+                        <option>平日 20:00〜（Zoom）</option>
+                        <option>日程を相談したい</option>
+                    </select>
+                </div>
+                <div><label class="form-label">現在の状況</label>
+                    <select>
+                        <option value="">選択してください</option>
+                        <option>完全未経験</option>
+                        <option>独学で少し学んだことがある</option>
+                        <option>プログラミングは学んだがデザインは未経験</option>
+                        <option>副業経験あり・さらに収入を増やしたい</option>
+                    </select>
+                </div>
+                <div><label class="form-label">ご質問・気になること（任意）</label><textarea
+                        placeholder="費用のこと、学習ペースのことなど、何でもどうぞ"></textarea></div>
+                <button class="modal-submit" onclick="closeModal()">説明会に申し込む（無料）</button>
+            </div>
+            <p class="modal-note">※ 送信後、確認メールをお送りします。迷惑メールフォルダもご確認ください。</p>
+        </div>
+    </div>
+
+    <div class="slide-up" id="slideUp">
+        <div class="slide-content">
+            <strong>🎓 無料説明会、毎週開催中</strong>
+            <p>参加無料・強引な勧誘なし。まず話だけ聞いてみませんか？</p>
+        </div>
+        <div class="slide-btns">
+            <button class="btn-main" style="padding:0.65rem 1.5rem;font-size:0.78rem;border-radius:0.5rem"
+                onclick="openModal()">今すぐ申し込む</button>
+            <button class="slide-close" onclick="closeSlide()">✕</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
