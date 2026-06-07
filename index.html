@@ -4,11 +4,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sakusaku | LP Portfolio</title>
+    <title>さくら | LPコーダー</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>工事中</h1>
+
+    <nav>
+        <div class="nav-logo">さくら<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#works">制作実績</a></li>
+            <li><a href="#flow">依頼の流れ</a></li>
+            <li><a href="#about">について</a></li>
+            <li><a href="https://crowdworks.jp" target="_blank" class="nav-cta">依頼する →</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-left">
+            <div class="hero-status">
+                <div class="status-dot"></div>
+                <span class="status-text">現在 受付中です</span>
+            </div>
+            <h1>
+                LP制作、<br>
+                <em>サクサク</em>・<em class="pink">丁寧</em>に。<br>
+                お任せください。
+            </h1>
+            <p class="hero-desc">
+                HTML / CSS / JavaScriptを使ったLPコーディングを専門にしています。
+                デザインカンプや参考サイトをご提供いただければ、
+                スピーディかつ丁寧に対応します。
+            </p>
+            <div class="hero-numbers">
+                <div>
+                    <span class="hero-num-val">5本</span>
+                    <span class="hero-num-label">制作実績</span>
+                </div>
+                <div>
+                    <span class="hero-num-val">3日〜</span>
+                    <span class="hero-num-label">最短納期</span>
+                </div>
+                <div>
+                    <span class="hero-num-val">3回</span>
+                    <span class="hero-num-label">無償修正</span>
+                </div>
+            </div>
+            <div class="hero-actions">
+                <a href="https://crowdworks.jp" target="_blank" class="btn-primary">クラウドワークスで依頼する</a>
+                <a href="#works" class="btn-secondary">実績を見る</a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="hero-works-preview">
+                <a href="./gym-lp/" target="_blank" class="preview-card">
+                    <div class="preview-thumb">💪</div>
+                    <div class="preview-info">
+                        <p class="preview-genre">Personal Gym</p>
+                        <p class="preview-name">FORMA GYM</p>
+                        <span class="preview-arrow">↗</span>
+                    </div>
+                </a>
+                <a href="./beauty-lp/" target="_blank" class="preview-card">
+                    <div class="preview-thumb">💆</div>
+                    <div class="preview-info">
+                        <p class="preview-genre">Beauty Salon</p>
+                        <p class="preview-name">Lumière</p>
+                        <span class="preview-arrow">↗</span>
+                    </div>
+                </a>
+                <a href="./cafe-lp/" target="_blank" class="preview-card">
+                    <div class="preview-thumb">☕</div>
+                    <div class="preview-info">
+                        <p class="preview-genre">Café</p>
+                        <p class="preview-name">Café Mori</p>
+                        <span class="preview-arrow">↗</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="trust-bar">
+        <div class="trust-item"><span class="trust-val">24h</span><span class="trust-label">以内に返信</span></div>
+        <div class="trust-item"><span class="trust-val">3日〜</span><span class="trust-label">最短納品</span></div>
+        <div class="trust-item"><span class="trust-val">3回</span><span class="trust-label">無償修正対応</span></div>
+        <div class="trust-item"><span class="trust-val">5ジャンル</span><span class="trust-label">制作実績あり</span></div>
+    </div>
+
+    <section class="works" id="works">
+        <div class="section-header fade-in">
+            <span class="section-eyebrow">Works</span>
+            <h2 class="section-title">制作実績</h2>
+        </div>
+        <div class="works-grid">
+            <a href="./gym-lp/" target="_blank" class="work-card fade-in">
+                <div class="work-thumb">💪</div>
+                <div class="work-info">
+                    <div>
+                        <p class="work-genre">Personal Gym</p>
+                        <p class="work-name">FORMA GYM</p>
+                    </div>
+                    <span class="work-link">見る →</span>
+                </div>
+            </a>
+            <a href="./beauty-lp/" target="_blank" class="work-card fade-in">
+                <div class="work-thumb">💆</div>
+                <div class="work-info">
+                    <div>
+                        <p class="work-genre">Beauty Salon</p>
+                        <p class="work-name">Lumière</p>
+                    </div>
+                    <span class="work-link">見る →</span>
+                </div>
+            </a>
+            <a href="./cafe-lp/" target="_blank" class="work-card fade-in">
+                <div class="work-thumb">☕</div>
+                <div class="work-info">
+                    <div>
+                        <p class="work-genre">Café</p>
+                        <p class="work-name">Café Mori</p>
+                    </div>
+                    <span class="work-link">見る →</span>
+                </div>
+            </a>
+            <a href="./school-lp/" target="_blank" class="work-card fade-in">
+                <div class="work-thumb">🎓</div>
+                <div class="work-info">
+                    <div>
+                        <p class="work-genre">Online School</p>
+                        <p class="work-name">Skill Up Academy</p>
+                    </div>
+                    <span class="work-link">見る →</span>
+                </div>
+            </a>
+            <a href="./cake-lp/" target="_blank" class="work-card fade-in">
+                <div class="work-thumb">🎂</div>
+                <div class="work-info">
+                    <div>
+                        <p class="work-genre">Cake Shop</p>
+                        <p class="work-name">Pâtisserie Sakura</p>
+                    </div>
+                    <span class="work-link">見る →</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="flow" id="flow">
+        <div class="flow-header">
+            <span class="section-eyebrow fade-in">How to Order</span>
+            <h2 class="section-title fade-in">依頼の流れ</h2>
+            <p style="font-size:0.82rem;color:var(--text-mid);margin-top:0.5rem;font-weight:300" class="fade-in">
+                はじめての方も安心。シンプルな4ステップで対応します。</p>
+        </div>
+        <div class="flow-grid">
+            <div class="flow-step fade-in">
+                <div class="flow-num">1</div>
+                <span class="flow-icon">💬</span>
+                <p class="flow-title">ご連絡</p>
+                <p class="flow-desc">クラウドワークスからメッセージください。24時間以内に返信します。</p>
+            </div>
+            <div class="flow-step fade-in">
+                <div class="flow-num">2</div>
+                <span class="flow-icon">📋</span>
+                <p class="flow-title">要件確認</p>
+                <p class="flow-desc">参考サイト・素材・希望納期をヒアリング。不明点はここで解決します。</p>
+            </div>
+            <div class="flow-step fade-in">
+                <div class="flow-num">3</div>
+                <span class="flow-icon">💻</span>
+                <p class="flow-title">制作・確認</p>
+                <p class="flow-desc">素材受領から最短3日で初稿提出。途中経過もご報告します。</p>
+            </div>
+            <div class="flow-step fade-in">
+                <div class="flow-num">4</div>
+                <span class="flow-icon">📦</span>
+                <p class="flow-title">納品完了</p>
+                <p class="flow-desc">修正3回まで無償対応。ファイル一式をお渡しして完了です。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-inner">
+            <div class="fade-in">
+                <div class="about-img">
+                    👩‍💻
+                    <div class="about-img-badge">LP CODER · さくら</div>
+                </div>
+            </div>
+            <div>
+                <span class="section-eyebrow fade-in">About</span>
+                <h2 class="about-title fade-in">
+                    <em>丁寧さ</em>と<em class="pink">スピード</em>を<br>大切にしています。
+                </h2>
+                <p class="about-body fade-in">
+                    HTML / CSS / JavaScriptを使ったLPコーディングを専門にしています。
+                    デザインカンプや参考サイトをいただければ、スピーディに再現します。
+                    ご連絡から納品まで丁寧なコミュニケーションを心がけており、
+                    「また頼みたい」と思っていただける仕事を目指しています。
+                </p>
+                <div class="about-skills fade-in">
+                    <span class="skill-tag">HTML / CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">レスポンシブ対応</span>
+                    <span class="skill-tag">アニメーション</span>
+                    <span class="skill-tag pink">フォーム実装</span>
+                    <span class="skill-tag pink">LINE誘導</span>
+                    <span class="skill-tag pink">モーダル実装</span>
+                    <span class="skill-tag">スマホ対応</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <span class="cta-eyebrow fade-in">Contact</span>
+        <h2 class="cta-title fade-in">まずは、<em>気軽に</em>ご相談ください。</h2>
+        <p class="cta-desc fade-in">
+            参考サイトだけでもOKです。お気軽にメッセージください。<br>
+            24時間以内に返信・最短3日で納品します。
+        </p>
+        <a href="https://crowdworks.jp" target="_blank" class="cta-btn fade-in">クラウドワークスで依頼する →</a>
+        <div class="cta-points fade-in">
+            <span class="cta-point">✅ 24時間以内返信</span>
+            <span class="cta-point">✅ 最短3日納品</span>
+            <span class="cta-point">✅ 修正3回無償</span>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">さくら<span>.</span></div>
+        <p class="footer-copy">© 2025 Sakusaku · LP Coder</p>
+    </footer>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
